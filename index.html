@@ -12,13 +12,24 @@
 <h2>Criar Tarefa</h2>
 
 <form>
-    Título da tarefa:<br>
-    <input type="text"><br><br>
 
-    Descrição:<br>
-    <textarea rows="3"></textarea><br><br>
+Título da tarefa:<br>
+<input type="text"><br><br>
 
-    <button>Adicionar</button>
+Descrição:<br>
+<textarea rows="3"></textarea><br><br>
+
+Prioridade:<br>
+<select>
+    <option>Baixa</option>
+    <option>Média</option>
+    <option>Alta</option>
+</select>
+
+<br><br>
+
+<button>Adicionar</button>
+
 </form>
 
 <hr>
@@ -31,6 +42,7 @@
     <th>ID</th>
     <th>Título</th>
     <th>Descrição</th>
+    <th>Prioridade</th>
     <th>Ações</th>
 </tr>
 
@@ -38,6 +50,7 @@
     <td>1</td>
     <td>Reunião com equipe</td>
     <td>Planejar sprint</td>
+    <td>Alta</td>
     <td>
         <button>Editar</button>
         <button>Excluir</button>
@@ -48,6 +61,7 @@
     <td>2</td>
     <td>Implementar login</td>
     <td>Criar tela inicial</td>
+    <td>Média</td>
     <td>
         <button>Editar</button>
         <button>Excluir</button>
@@ -62,13 +76,22 @@
 
 <form>
 
-    Título:<br>
-    <input type="text" value="Reunião com equipe"><br><br>
+Título:<br>
+<input type="text" value="Reunião com equipe"><br><br>
 
-    Descrição:<br>
-    <textarea rows="3">Planejar sprint</textarea><br><br>
+Descrição:<br>
+<textarea rows="3">Planejar sprint</textarea><br><br>
 
-    <button>Salvar</button>
+Prioridade:<br>
+<select>
+    <option>Baixa</option>
+    <option selected>Média</option>
+    <option>Alta</option>
+</select>
+
+<br><br>
+
+<button>Salvar</button>
 
 </form>
 
