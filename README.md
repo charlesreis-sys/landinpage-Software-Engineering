@@ -26,7 +26,7 @@ O sistema permite:
 Foi adotado o Kanban, utilizando o GitHub Projects para organizar as atividades nas colunas To Do, In Progress e Done.
 
 ## Mudança de Escopo
-Durante o desenvolvimento, foi adicionada a funcionalidade de prioridade de tarefas, permitindo classificar cada tarefa como baixa, média ou alta prioridade.
+Durante o desenvolvimento, foi adicionada a funcionalidade de prioridade de tarefas, permitindo classificar cada tarefa como baixa, média ou alta prioridade, adicionado as tarefas.
 
 ## Controle de Qualidade
 Foi configurado um pipeline de integração contínua com GitHub Actions para executar automaticamente os testes a cada commit.
