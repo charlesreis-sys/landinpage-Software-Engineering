@@ -29,4 +29,4 @@ Foi adotado o Kanban, utilizando o GitHub Projects para organizar as atividades 
 Durante o desenvolvimento, foi adicionada a funcionalidade de prioridade de tarefas, permitindo classificar cada tarefa como baixa, média ou alta prioridade, adicionado as tarefas.
 
 ## Controle de Qualidade
-Foi configurado um pipeline de integração contínua com GitHub Actions para executar automaticamente os testes a cada commit.
+Foi configurado um pipeline de integração contínua com GitHub Actions para executar automaticamente os testes a cada commit, arquivos HTML através do HTMLHint e o script Python.
