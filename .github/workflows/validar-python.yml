@@ -1,14 +1,17 @@
 name: Validar Python
 
-on: [push, pull_request]
-  
+on:
+  push:
+  pull_request:
+
 jobs:
   validar:
     runs-on: ubuntu-latest
 
     steps:
 
-    - uses: actions/checkout@v3
+    - name: Baixar repositório
+      uses: actions/checkout@v3
 
     - name: Instalar Python
       uses: actions/setup-python@v4
