@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Gerenciador de Tarefas</title>
+</head>
+
+<body>
+
+<h1>Gerenciador de Tarefas</h1>
+
+<h2>Criar Tarefa</h2>
+
+<form>
+    Título da tarefa:<br>
+    <input type="text"><br><br>
+
+    Descrição:<br>
+    <textarea rows="3"></textarea><br><br>
+
+    <button>Adicionar</button>
+</form>
+
+<hr>
+
+<h2>Lista de Tarefas</h2>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>ID</th>
+    <th>Título</th>
+    <th>Descrição</th>
+    <th>Ações</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Reunião com equipe</td>
+    <td>Planejar sprint</td>
+    <td>
+        <button>Editar</button>
+        <button>Excluir</button>
+    </td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Implementar login</td>
+    <td>Criar tela inicial</td>
+    <td>
+        <button>Editar</button>
+        <button>Excluir</button>
+    </td>
+</tr>
+
+</table>
+
+<hr>
+
+<h2>Editar Tarefa</h2>
+
+<form>
+
+    Título:<br>
+    <input type="text" value="Reunião com equipe"><br><br>
+
+    Descrição:<br>
+    <textarea rows="3">Planejar sprint</textarea><br><br>
+
+    <button>Salvar</button>
+
+</form>
+
+</body>
+</html>
