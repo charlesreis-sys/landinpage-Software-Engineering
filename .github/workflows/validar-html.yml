@@ -1,11 +1,19 @@
 name: Validar HTML
-on: [push, pull_request]
+
+on:
+  push:
+  pull_request:
+
 jobs:
   validar:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Instalar HTMLHint
-         run: npm install -g htmlhint
-      - name: Validar arquivos HTML
-         run: htmlhint index.html
+    - name: Baixar repositório
+      uses: actions/checkout@v3
+
+    - name: Instalar HTMLHint
+      run: npm install -g htmlhint
+
+    - name: Validar arquivos HTML
+      run: htmlhint index.html"
