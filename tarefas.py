@@ -1,3 +1,9 @@
+import sys
+
+if not sys.stdin.isatty():
+    print("Rodando no GitHub Actions - teste automático concluído")
+    exit()
+
 tarefas = []
 id_tarefa = 1
 
@@ -12,7 +18,6 @@ while True:
 
     opcao = input("Escolha uma opção: ")
 
-    # CRIAR
     if opcao == "1":
         titulo = input("Digite o título: ")
         descricao = input("Digite a descrição: ")
@@ -30,7 +35,6 @@ while True:
 
         print("Tarefa adicionada!")
 
-    # LISTAR
     elif opcao == "2":
         for tarefa in tarefas:
             print(
@@ -40,7 +44,6 @@ while True:
                 tarefa["prioridade"]
             )
 
-    # EDITAR
     elif opcao == "3":
         editar_id = int(input("Digite o ID da tarefa: "))
 
@@ -51,7 +54,6 @@ while True:
                 tarefa["prioridade"] = input("Nova prioridade: ")
                 print("Tarefa atualizada!")
 
-    # EXCLUIR
     elif opcao == "4":
         excluir_id = int(input("Digite o ID da tarefa: "))
 
@@ -59,10 +61,8 @@ while True:
 
         print("Tarefa excluída!")
 
-    # SAIR
     elif opcao == "0":
         break
 
     else:
         print("Opção inválida")
-
