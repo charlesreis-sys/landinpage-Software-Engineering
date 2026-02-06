@@ -16,11 +16,13 @@ while True:
     if opcao == "1":
         titulo = input("Digite o título: ")
         descricao = input("Digite a descrição: ")
+        prioridade = input("Prioridade (Baixa/Média/Alta): ")
 
         tarefa = {
             "id": id_tarefa,
             "titulo": titulo,
-            "descricao": descricao
+            "descricao": descricao,
+            "prioridade": prioridade
         }
 
         tarefas.append(tarefa)
@@ -31,7 +33,12 @@ while True:
     # LISTAR
     elif opcao == "2":
         for tarefa in tarefas:
-            print(tarefa["id"], "-", tarefa["titulo"], "-", tarefa["descricao"])
+            print(
+                tarefa["id"], "-",
+                tarefa["titulo"], "-",
+                tarefa["descricao"], "-",
+                tarefa["prioridade"]
+            )
 
     # EDITAR
     elif opcao == "3":
@@ -41,6 +48,7 @@ while True:
             if tarefa["id"] == editar_id:
                 tarefa["titulo"] = input("Novo título: ")
                 tarefa["descricao"] = input("Nova descrição: ")
+                tarefa["prioridade"] = input("Nova prioridade: ")
                 print("Tarefa atualizada!")
 
     # EXCLUIR
@@ -57,3 +65,4 @@ while True:
 
     else:
         print("Opção inválida")
+
